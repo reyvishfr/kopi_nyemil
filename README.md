@@ -6,7 +6,7 @@ Pengguna bisa mendaftar atau login, mencari dan memilih menu makanan dan minuman
 
 ## Fitur
 
-- Splash / Welcome dengan animasi muncul pelan
+- Splash / Welcome 
 - Sign Up dengan pilihan Register atau Login
 - Register akun baru (validasi kolom kosong, password minimal 6 karakter, username tidak boleh sama)
 - Login dengan username dan password
