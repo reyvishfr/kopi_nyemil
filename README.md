@@ -47,7 +47,7 @@ Pengguna bisa mendaftar atau login, mencari dan memilih menu makanan dan minuman
 
 1. Pastikan Android Studio sudah terpasang.
 2. Clone repository ini:
-   git clone https://github.com/<username>/<nama-repository>.git
+   git clone https://github.com/reyvishfr/Kopi_Nyemil.git
 3. Buka Android Studio, pilih File > Open, lalu pilih folder project yang sudah di-clone.
 4. Tunggu proses Gradle Sync sampai selesai.
 5. Siapkan perangkat: emulator (Device Manager) atau HP Android dengan USB debugging aktif.
