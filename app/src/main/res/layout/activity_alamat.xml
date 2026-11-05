@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat Pengiriman"
+            android:textColor="@color/dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            android:text="Cek pesananmu, lalu isi alamat tujuan."
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_card"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.08"
+                        android:text="PESANAN KAMU"
+                        android:textColor="@color/brown"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvRingkasan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:lineSpacingExtra="6dp"
+                        android:textColor="@color/dark"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_card"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.08"
+                        android:text="DETAIL PENGIRIMAN"
+                        android:textColor="@color/brown"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="6dp"
+                        android:text="Nama Lengkap"
+                        android:textColor="@color/grey"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/etNama"
+                        style="@style/InputKotak"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Nama Lengkap"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginBottom="6dp"
+                        android:text="Alamat"
+                        android:textColor="@color/grey"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/etAlamat"
+                        style="@style/InputKotak"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:gravity="top|start"
+                        android:hint="Alamat"
+                        android:inputType="textMultiLine"
+                        android:paddingTop="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginBottom="6dp"
+                        android:text="Patokan"
+                        android:textColor="@color/grey"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/etPatokan"
+                        style="@style/InputKotak"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:gravity="top|start"
+                        android:hint="Patokan atau detail lengkap"
+                        android:inputType="textMultiLine"
+                        android:paddingTop="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_card"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.08"
+                        android:text="METODE PEMBAYARAN"
+                        android:textColor="@color/brown"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/rgBayar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/rbCod"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/dark"
+                            android:checked="true"
+                            android:paddingStart="8dp"
+                            android:text="Bayar di tempat (COD)"
+                            android:textColor="@color/dark"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbTransfer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/dark"
+                            android:paddingStart="8dp"
+                            android:text="Transfer Bank"
+                            android:textColor="@color/dark"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/rbEwallet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/dark"
+                            android:paddingStart="8dp"
+                            android:text="E-Wallet (GoPay, OVO, DANA)"
+                            android:textColor="@color/dark"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnOrder"
+            style="@style/BtnGelap"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="12dp"
+            android:text="Order dan Kirim" />
+
+        <TextView
+            android:id="@+id/tvKembali"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Kembali"
+            android:textColor="@color/brown"
+            android:textStyle="bold" />
+    </LinearLayout>
+</FrameLayout>

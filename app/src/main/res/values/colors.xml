@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark">#7A4E2D</color>
+    <color name="peach">#F0CFA5</color>
+    <color name="cream">#FFFFFF</color>
+    <color name="cream_border">#EBDCC8</color>
+    <color name="brown">#B36A28</color>
+    <color name="grey">#7D6B5C</color>
+    <color name="border">#E0D0BC</color>
+    <color name="green_light">#DDEBDD</color>
+    <color name="green_dark">#2F6B45</color>
+    <color name="bg">#F3E9D7</color>
+    <color name="tombol">#3B2A22</color>
+    <color name="hero">#7B5E4A</color>
+    <color name="splash_atas">#4A302B</color>
+    <color name="splash_tengah">#432A25</color>
+    <color name="splash_bawah">#2C1A15</color>
+    <color name="karamel">#B8782E</color>
+    <color name="krem">#F7E9D6</color>
+    <color name="karamel_muda">#E2B07A</color>
+    <color name="krem_pudar">#66F7E9D6</color>
+</resources>
